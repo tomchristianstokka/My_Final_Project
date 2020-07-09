@@ -1,0 +1,29 @@
+import React from 'react';
+import styled from 'styled-components';
+
+import Header from './Header.jsx';
+import Footer from './Footer.jsx';
+import Main from './Main.jsx';
+import Nav from './Nav.jsx';
+
+const App = () => {
+
+    return (
+        <AppStyled className='App'>
+            <Header />
+            <Nav />
+            <Main /> 
+            <Footer />    
+        </AppStyled> 
+    );
+}
+
+export default App;
+
+const AppStyled = styled.div`
+    .nested-wrapper {
+        max-width: 1200px;
+        margin: auto;
+        outline: solid black 1px;
+    }
+`;
