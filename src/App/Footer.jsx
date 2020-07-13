@@ -5,7 +5,7 @@ const Footer = () => {
     return (
         <Footerstyled>
             <div className='nested-wrapper'>
-                Contacts
+                Footer
             </div>   
         </Footerstyled>
     );
