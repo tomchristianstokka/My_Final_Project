@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
+import { mq } from '../common/mediaQueries.js';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
     faPizzaSlice,
@@ -27,6 +28,13 @@ export default Header;
 const Headerstyled = styled.header`
     background-color: tan;
     font-size: 30px;
+
+    @media ${mq.tablet} {
+        background-color: darkred;
+    }
+    @media ${mq.desktop} {
+        background-color: darkseagreen;
+    }
     
     .row-container {
         display: flex;
