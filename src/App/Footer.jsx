@@ -43,4 +43,4 @@ const Footerstyled = styled.footer`
         @media ${mq.desktop} {
             background-color: darkseagreen;
         }        
-`;
+    `;

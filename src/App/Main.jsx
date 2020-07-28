@@ -23,7 +23,5 @@ const Main = () => {
 export default Main;
 
 const Mainstyled = styled.main`
-        background-color: tan;
-        font-size: 40px;
         padding: 50px;
 `;

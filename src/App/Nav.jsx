@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import { NavLink } from 'react-router-dom';
 
 import { mq } from '../common/mediaQueries.js';
+
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
     faBars,
