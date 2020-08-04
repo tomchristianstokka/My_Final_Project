@@ -36,5 +36,4 @@ const TabStyled = styled.div`
     &.active {
         background-color: tan;
     }
-
 `;
