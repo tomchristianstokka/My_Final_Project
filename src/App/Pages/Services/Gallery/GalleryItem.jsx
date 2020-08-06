@@ -1,14 +1,38 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styled from 'styled-components';
 
-const GalleryItem = ({item}) => {
+import Lightbox from './Lightbox.jsx';
 
-    return (
-        <GalleryItemStyled className='GalleryItem'>
-            <div className='category'>{ item.category }</div>
-            <img src={ item.image } alt={ item.title } />
-            <div className='title'>{item.title}</div>
-        </GalleryItemStyled>
+const GalleryItem = ({ item }) => {
+
+    const [showLBox, showLBoxUpdate ] = useState(false);
+
+    const turnOn = () => {
+        showLBoxUpdate(true);
+    }
+
+    const turnOff = () => {
+        showLBoxUpdate(false);
+    }
+
+        return (
+            <GalleryItemStyled className='GalleryItem'>
+                <div className='category'>{ item.category }</div>
+                <img 
+                    src={ item.image } 
+                    alt={ item.title }
+                    onClick={ turnOn }    
+                />
+                <div className='title'>{item.title}</div>
+                <Lightbox show={ showLBox } hideAction={ turnOff }>
+                    <img src={ item.image } alt={ item.title } />
+                    <h3>{ item.title } </h3>
+                    <div className='description'>
+                        { item.description }
+                    </div>
+                    <div className='cost'>${ item.cost}</div>
+                </Lightbox>
+            </GalleryItemStyled>
     );
 }
 
