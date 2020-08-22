@@ -62,7 +62,7 @@ const ContactForm = () => {
             console.log('Validating: ', newField.label);
         }
 
-        if (newField.value.lenght < 4) {
+        if (newField.value.length < 4) {
             // Let them know there is an error
             newField.validate.valid = false;
             newField.validate.message = `You forgot to fill out ${newField.label} field.`;
@@ -105,7 +105,7 @@ const handleFormSubmit = (event) => {
 
     return (
         <ContactFormStyled className='ContactForm'>
-            <form OnSubmit={ handleFormSubmit }>
+            <form onSubmit={ handleFormSubmit }>
                 <FormGroup 
                     formField={ userName }       
                     onChange={ handleOnChange }
