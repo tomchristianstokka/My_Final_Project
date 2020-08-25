@@ -30,7 +30,6 @@ const GalleryItem = ({ item }) => {
                     <div className='description'>
                         { item.description }
                     </div>
-                    <div className='cost'>${ item.cost}</div>
                 </Lightbox>
             </GalleryItemStyled>
     );
@@ -41,22 +40,24 @@ export default GalleryItem;
 const GalleryItemStyled = styled.div`
     position: relative;
 
-    border: solid 1px purple;
+    border: solid 1px #8c1e1e;
 
-    margin: 20px;
+    margin: 30px;
     img { 
         display: block; 
-        border: solid 10px purple;
+        border: solid 2px #8c1e1e;
     }
 
     .category {
         position: absolute;
         top: 0: right: 0; left: 0;
         background-color: rgba(255,255,255, .5);
+        color: #02081b;
         padding: 10px;
         font-size: 12px;
 
         text-align: right;
+        margin: 2px;
     } 
 
     .title {
@@ -70,16 +71,17 @@ const GalleryItemStyled = styled.div`
 
         .Lightbox {
         img {
-            border: solid 20px red;
+            border: solid 2px #02081b;
             max-width: 100%;
         }
         h3 {
-            font-size: 30px;
+            font-size: 20px;
             margin: 0px;
         }
         .description {
             color: #333;
             background-color: gray;
+            max-width: 100%;
         }
     } 
 `;

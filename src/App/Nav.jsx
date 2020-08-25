@@ -55,9 +55,8 @@ const Nav = () => {
                 {
                     showMenu &&
                     <div className='links'>
-                        <NavLink to='/' exact>Welcome</NavLink>  
                         <NavLink to='/work'>Work</NavLink>
-                        <NavLink to='/about'>About Me</NavLink>
+                        <NavLink to='/' exact>About</NavLink>  
                         <NavLink to='/contact'>Contact</NavLink>
                     </div>
                 }
@@ -69,18 +68,18 @@ const Nav = () => {
 export default Nav;
 
 const NavStyled = styled.nav`
-    background-color: tan;
-    color: black;
-    text-align: center;
+    background-color: #02081b;
+    color: #d6d6d6;
+    text-align: right;
 
     .hamburger {
         position: absolute;
         right: 20px;
-        top: 20px;
+        top: 10px;
 
         svg {
-            color: purple;
-            width: 40px;
+            color: #8c1e1e;
+            width: 25px;
             height: auto;
         }
 
@@ -95,15 +94,17 @@ const NavStyled = styled.nav`
         display: inline-block;
 
         text-align: center;
-        font-size: 20px;
-        background-color: tan;
-        color: black;
+        font-size: 18px;
+        background-color: #d6d6d6;
+        color: #02081b;
 
         text-decoration: none;
 
-        margin-bottom: 10px;
+        margin-top: 0px;
 
-        border-radius: 5px;
+        margin-bottom: 0px;
+
+        border-radius: 26px;
 
         width: 100px;
         line-height: 30px;
@@ -119,10 +120,12 @@ const NavStyled = styled.nav`
         }
 
         &:hover {
-            background-color: beige;
+            background-color: #560707;
+            color: #d6d6d6;
         }
         &:active {
-            background-color: darkslategray;
+            background-color: #8c1e1e;
+            color: white;
         }
     }
 `;

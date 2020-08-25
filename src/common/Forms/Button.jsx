@@ -16,18 +16,22 @@ const Button = ({children, type}) => {
 export default Button;
 
 const ButtonStyled = styled.div`
-    background-color: lightgreen;
+    background-color: #02081b;
+    color: #8c1e1e;
     padding: 10px;
     border: none;
     outline: none;
     border-radius: 5px;
 
 
+
     &:hover {
-        background-color: darkgreen;
+        background-color: #02081b;
+        color: #d6d6d6;
     }
 
     &:active {
-        background-color: black;
+        background-color: lightgreen;
+        color: #02081b;
     }
 `;

@@ -35,12 +35,13 @@ random();
 export default Footer;
 
 const Footerstyled = styled.footer`
-        background-color: tan;
+        background-color: #02081b;
+        color: #d6d6d6;
 
         @media ${mq.tablet} {
-            background-color: darkred;
+            background-color: #02081b;
         }
         @media ${mq.desktop} {
-            background-color: darkseagreen;
+            background-color: #02081b;
         }        
     `;

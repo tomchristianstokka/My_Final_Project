@@ -2,17 +2,13 @@ import React from 'react';
 import styled from 'styled-components';
 
 import { mq } from '../common/mediaQueries.js';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {
-    faPizzaSlice,
-} from '@fortawesome/free-solid-svg-icons';
+// import { Logo } from '../../public/assets/img/Logo/Logo.png';
 
 const Header = () => {
     return (
         <Headerstyled>
             <div className='nested-wrapper'>
                 <div className='row-container'>
-                    <div className='logo'><FontAwesomeIcon icon={ faPizzaSlice } /></div>
                     <div className='text'>
                         <h2>tomchristianstokka</h2>
                         <h3>portfolio</h3>
@@ -26,19 +22,19 @@ const Header = () => {
 export default Header;
 
 const Headerstyled = styled.header`
-    background-color: tan;
+    background-color: #02081b;
     font-size: 30px;
 
     @media ${mq.tablet} {
-        background-color: darkred;
+        background-color: #02081b;
     }
     @media ${mq.desktop} {
-        background-color: darkseagreen;
+        background-color: #02081b;
     }
     
     .row-container {
         display: flex;
-        justify-content: center;
+        justify-content: left;
     }
     .logo {
         color: black;
@@ -52,14 +48,15 @@ const Headerstyled = styled.header`
     .text {
 
         h2 {
-            font-size: 40px;
+            font-size: 36px;
             margin: 0px;
-            color: black;
+            color: #d6d6d6;
         }
         h3 {
             font-size: 30px;
             margin: 0px;
-            color: black;
+            color: #8c1e1e;
+            padding: 0px;
         }
     }
 `;

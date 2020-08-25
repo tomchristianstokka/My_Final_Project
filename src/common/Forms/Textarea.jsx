@@ -22,5 +22,4 @@ const Textarea = ({formField, onChange}) => {
 export default Textarea;
 
 const TextareaStyled = styled.div`
-    
 `;

@@ -23,5 +23,4 @@ const Input = ({formField, onChange}) => {
 export default Input;
 
 const InputStyled = styled.div`
-    
 `;

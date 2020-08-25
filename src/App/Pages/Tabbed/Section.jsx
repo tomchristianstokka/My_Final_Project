@@ -20,8 +20,9 @@ const Section = ({chosenTab}) => {
 export default Section;
 
 const SectionStyled = styled.div`
-    background-color: tan;
+    background-color: #d6d6d6;
     padding: 20px;
+    border-radius: 20px;
 
     @media ${mq.tablet} {
         display: flex;
@@ -35,7 +36,7 @@ const SectionStyled = styled.div`
         text-align: center;
 
         img {
-            max-width: 100%;
+            max-width: 85%;
         }
     }
 

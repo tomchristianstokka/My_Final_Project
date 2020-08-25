@@ -127,5 +127,5 @@ const handleFormSubmit = (event) => {
 export default ContactForm;
 
 const ContactFormStyled = styled.div`
-    
+    background-color: #d6d6d6;  
 `;

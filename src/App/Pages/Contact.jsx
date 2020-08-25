@@ -40,12 +40,12 @@ const ContactStyled = styled.div`
 
         .column1 {
             width: 35%;
-            background-color: yellow;
+            background-color: #d6d6d6;
         }
 
         .column2 {
             width: 65%;
-            background-color: pink;
+            background-color: #d6d6d6;
         }
     }
     

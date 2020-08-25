@@ -33,7 +33,7 @@ const LightboxStyled = styled.div`
     z-index: 1000;
 
     .light {
-        width: 500px;
+        width: 300px;
         padding: 20px;
         background-color: #fff;
         

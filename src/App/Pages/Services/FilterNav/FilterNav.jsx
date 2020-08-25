@@ -29,5 +29,8 @@ const FilterNav = ({ services, currCategory, currCategorySet }) => {
 export default FilterNav;
 
 const FilterNavStyled = styled.div`
-    text-align: center;
+    position: absolute;
+    right: 87%;
+    top: 28%;
+    left: 1%;
 `;
